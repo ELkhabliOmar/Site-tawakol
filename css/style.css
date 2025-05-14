@@ -94,7 +94,7 @@
 }
 
 /* Liste stylisée en blanc */
-.checklist {
+/* .checklist {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -112,6 +112,21 @@
   margin-right: 0.5rem;
   font-size: 1.2rem;
   color: white;
+} */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.checklist .check {
+  color: white;        /* ou une autre couleur */
+  margin-right: 8px;   /* espace entre le point et le texte */
 }
 
 /* Animations */
