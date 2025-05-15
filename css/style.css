@@ -282,6 +282,21 @@
   .app-column img:hover {
 	transform: scale(1.05);
   }
+    .app-card {
+  display: inline-block;
+   background: linear-gradient(
+        135deg,
+        rgba(28, 82, 54, 0.9) 0%,
+        rgba(77, 144, 116, 0.85) 50%,
+        rgba(28, 82, 54, 0.9) 100%
+    );
+
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  height: auto; /* ou fixe si tu veux */
+  text-align: left;
+}
   
 
 /* tarification ///////////////////////////////////////////// */
