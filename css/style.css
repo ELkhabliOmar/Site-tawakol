@@ -164,7 +164,7 @@
   
 /* Responsive pour mobile */
 /* Responsive pour mobile */
-.mobile-separator {
+/* .mobile-separator {
   display: none;
   height: 12px;
   width: 80%;
@@ -176,6 +176,33 @@
         rgba(77, 144, 116, 0.85) 50%,
         rgba(28, 82, 54, 0.9) 100%
   );
+} */
+.mobile-separator {
+  display: none;
+  height: 10px;
+  width: 60%;
+  margin: 2.5rem auto;
+  border-radius: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 82, 54, 0.95) 0%,
+    rgba(77, 144, 116, 0.9) 50%,
+    rgba(28, 82, 54, 0.95) 100%
+  );
+  box-shadow: 0 0 10px rgba(28, 82, 54, 0.3); /* effet lumineux */
+  position: relative;
+  overflow: hidden;
+  animation: separatorPulse 3s infinite ease-in-out;
+}
+@keyframes separatorPulse {
+  0%, 100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(1.05);
+    opacity: 0.85;
+  }
 }
 
 @media (max-width: 768px) {
