@@ -7849,7 +7849,7 @@ html.tablet .ui-to-top {
 	}
 }
 
-.rd-navbar-wrap, .rd-navbar,
+/* .rd-navbar-wrap, .rd-navbar,
 .rd-menu,
 .rd-navbar-nav,
 .rd-navbar-panel, .rd-navbar-static .rd-menu, .rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-fixed .rd-navbar-submenu, .rd-navbar-project {
@@ -7860,7 +7860,21 @@ html.tablet .ui-to-top {
         rgba(77, 144, 116, 0.85) 50%,
         rgba(28, 82, 54, 0.9) 100%
   ) !important;
+} */
+ .rd-navbar-wrap,
+.rd-navbar,
+.rd-menu,
+.rd-navbar-nav,
+.rd-navbar-panel,
+.rd-navbar-static .rd-menu,
+.rd-navbar-fixed .rd-navbar-nav-wrap,
+.rd-navbar-fixed .rd-navbar-submenu,
+.rd-navbar-project {
+  transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
+  background-color: #38664a  !important;
+  background-image: none !important;
 }
+
 
 .rd-navbar--no-transition, .rd-navbar--no-transition * {
 	transition: none !important;
