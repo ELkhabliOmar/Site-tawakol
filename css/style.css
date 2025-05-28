@@ -179,29 +179,35 @@
 } */
 
 /*for image de store footer  */
- .store-downloads {
+.store-downloads {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 15px;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .store-img {
-  height: 50px;
+  height: 60px;
+  transition: transform 0.3s ease;
 }
 
-/* Affichage en colonne pour mobile */
+.store-img:hover {
+  transform: scale(1.05);
+}
+
+/* Version mobile : empile les logos */
 @media (max-width: 576px) {
   .store-downloads {
     flex-direction: column;
-    align-items: center;
   }
 
   .store-img {
     margin-bottom: 10px;
   }
 }
+
 /*for image de store footer  */
 
 .mobile-separator {
