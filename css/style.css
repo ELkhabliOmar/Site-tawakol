@@ -177,6 +177,33 @@
         rgba(28, 82, 54, 0.9) 100%
   );
 } */
+
+/*for image de store footer  */
+ .store-downloads {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.store-img {
+  height: 50px;
+}
+
+/* Affichage en colonne pour mobile */
+@media (max-width: 576px) {
+  .store-downloads {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-img {
+    margin-bottom: 10px;
+  }
+}
+/*for image de store footer  */
+
 .mobile-separator {
   display: none;
   height: 10px;
