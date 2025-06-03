@@ -207,8 +207,49 @@
     margin-bottom: 10px;
   }
 }
-
+.rd-navbar-main {
+  position: relative;
+}
 /*for image de store footer  */
+/*for support  */
+.rd-navbar-center-support {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.support-btn {
+  background-color: transparent; /* ✅ Fond totalement transparent */
+  color: #fff; /* ou une autre couleur si tu veux */
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
+  transition: color 0.3s ease;
+  border: none; /* facultatif : retire la bordure si ajoutée par défaut */
+}
+
+.support-btn:hover {
+  color: #FFD700; /* 💡 exemple : effet or au survol, facultatif */
+}
+
+
+
+@media (max-width: 992px) {
+  .rd-navbar-center-support {
+    display: none;
+  }
+}
+
+/*for support  */
 
 .mobile-separator {
   display: none;
